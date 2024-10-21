@@ -111,14 +111,14 @@ const SortingVisualizer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 py-5">
-          <Button value={"Randomize Array"} functionName={generateArray} />
+          <Button value={"Generate Array"} functionName={generateArray} />
           <Button value={"Insertion Sort"} functionName={insertionSortFunction} />
           <Button value={"Selection Sort"} functionName={selectionSortFunction} />
           <Button value={"Bubble Sort"} functionName={bubbleSortFunction} />
           <Button value={"Merge Sort"} functionName={mergeSortFunction} />
           <Button value={"Quick Sort"} functionName={quickSortFunction} />
           <Button value={"Shell Sort"} functionName={shellSortFunction} />
-          <Button value={"Change Size"} functionName={changeSize} />
+          <Button value={"Change Size"} functionName={generateArray} />
         </div>
 
         {!clickHere ? (
@@ -142,7 +142,7 @@ const SortingVisualizer = () => {
         ) : (
           <div className="flex justify-center items-center flex-col space-y-2" style={{ height: '500px' }}>
             <p style={{ opacity: 0.5 }}>Set array size and animation speed</p>
-            <p style={{ opacity: 0.5 }}>Click Randomize Array</p>
+            <p style={{ opacity: 0.5 }}>Click Generate Array</p>
           </div>
         )}
 
